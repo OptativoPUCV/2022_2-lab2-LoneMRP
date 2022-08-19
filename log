@@ -322,3 +322,9 @@ list.c:62:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 1893700
+Fri 19 Aug 2022 05:30:36 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  9|3
+total_score: 35/70
+ba2f8c1
