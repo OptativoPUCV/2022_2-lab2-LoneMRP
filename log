@@ -238,3 +238,13 @@ list.c:45:17: error: ‘next’ undeclared (first use in this function)
 list.c:45:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 3f862e6
+Fri 19 Aug 2022 05:10:23 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:45:21: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   45 |   list->current=list->next;
+      |                     ^~
+Compilation failed
+a2d873f
