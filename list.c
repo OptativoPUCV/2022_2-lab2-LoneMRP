@@ -34,7 +34,6 @@ return lista;
 }
 
 void * firstList(List * list) {
-  if(list->first) return NULL;
   list->current=list->first;
   return list->first->data;
 }
