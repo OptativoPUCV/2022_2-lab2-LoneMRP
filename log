@@ -174,3 +174,17 @@ Fri 19 Aug 2022 04:55:36 PM UTC:
  tests:  1|5
 total_score: 10/70
 7a20d31
+Fri 19 Aug 2022 05:01:51 PM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:39:6: error: expected expression before ‘)’ token
+   39 |   if()
+      |      ^
+list.c:41:1: error: control reaches end of non-void function [-Werror=return-type]
+   41 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3860257
