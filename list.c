@@ -34,8 +34,7 @@ return lista;
 }
 
 void * firstList(List * list) {
-  list->current=list->first;
-  return list->first->data;
+
 }
 
 void * nextList(List * list) {
