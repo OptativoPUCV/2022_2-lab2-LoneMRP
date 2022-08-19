@@ -78,3 +78,25 @@ list.c:40:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 140da2c
+Fri 19 Aug 2022 04:51:36 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:37:7: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   37 |   if(!lista->first) return NULL;
+      |       ^~~~~
+      |       list
+list.c:37:7: note: each undeclared identifier is reported only once for each function it appears in
+list.c:38:21: error: ‘List’ {aka ‘struct List’} has no member named ‘first’
+   38 |   list->current=list->first;
+      |                     ^~
+list.c:39:14: error: ‘List’ {aka ‘struct List’} has no member named ‘first’
+   39 |   return list->first->data;
+      |              ^~
+list.c:40:1: error: control reaches end of non-void function [-Werror=return-type]
+   40 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ddeee6e
