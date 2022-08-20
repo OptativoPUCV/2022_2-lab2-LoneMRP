@@ -328,3 +328,32 @@ Fri 19 Aug 2022 05:30:36 PM UTC:
  tests:  9|3
 total_score: 35/70
 ba2f8c1
+Sat 20 Aug 2022 01:23:56 AM UTC: 
+ list.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:63:26: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   63 |   if(!list->head) return NULL;
+      |                          ^~~~
+list.c:62:6: note: declared here
+   62 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+list.c:64:28: error: expected expression before ‘void’
+   64 |   list->current=createNode(void *data);
+      |                            ^~~~
+list.c:68:23: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   68 |   return list->current->data
+      |          ~~~~~~~~~~~~~^~~~~~
+list.c:62:6: note: declared here
+   62 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+list.c:68:29: error: expected ‘;’ before ‘}’ token
+   68 |   return list->current->data
+      |                             ^
+      |                             ;
+   69 | }
+      | ~                            
+cc1: all warnings being treated as errors
+Compilation failed
+e6edfdd
