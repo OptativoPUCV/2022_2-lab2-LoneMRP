@@ -397,3 +397,26 @@ list.c:62:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 50efc46
+Sat 20 Aug 2022 01:26:12 AM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:63:28: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   63 |     if(!list->head) return NULL;
+      |                            ^~~~
+list.c:62:6: note: declared here
+   62 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+list.c:64:30: error: expected expression before ‘void’
+   64 |     list->current=createNode(void *data);
+      |                              ^~~~
+list.c:69:23: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   69 |   return list->current->data;
+      |          ~~~~~~~~~~~~~^~~~~~
+list.c:62:6: note: declared here
+   62 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+54cf636
