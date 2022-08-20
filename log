@@ -420,3 +420,9 @@ list.c:62:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 54cf636
+Sat 20 Aug 2022 01:40:38 AM UTC: 
+ list.c | 16 +++++++++-------
+ 1 file changed, 9 insertions(+), 7 deletions(-)
+ tests:  10|2
+total_score: 45/70
+7767a72
